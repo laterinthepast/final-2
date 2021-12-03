@@ -507,7 +507,8 @@ body {
       }
     }
     .hero-buttons {
-      display: flex;
+      display: none;
+      /* display: flex;
       justify-content: center;
       align-items: center;
       gap: 6vw;
@@ -522,7 +523,7 @@ body {
         font-weight: 600;
         background-color: #fff;
         border: none;
-      }
+      } */
     }
   }
   .news {

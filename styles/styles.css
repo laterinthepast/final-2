@@ -647,28 +647,23 @@ body {
     font-weight: 900;
   }
   .hero .hero-buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 6vw;
-    position: absolute;
-    width: 30vw;
-    top: 35vw;
-    left: 20vw;
-  }
-  .hero .hero-buttons a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.5vw;
-    font-weight: 600;
-    background-color: #fff;
-    border: none;
+    display: none;
+    /* display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6vw;
+      position: absolute;
+      width: 30vw;
+      top: 35vw;
+      left: 20vw;
+      a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.5vw;
+        font-weight: 600;
+        background-color: #fff;
+        border: none;
+      } */
   }
   .news {
     padding: 2vw 10vw;
