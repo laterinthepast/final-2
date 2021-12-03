@@ -632,7 +632,7 @@ body {
     width: 100%;
   }
   .hero .hide-for-mobile img {
-    width: 80%;
+    width: 80vw;
     height: auto;
   }
   .hero .hero-text {
@@ -656,7 +656,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 2vw;
+    gap: 6vw;
     position: absolute;
     width: 30vw;
     top: 35vw;
@@ -751,7 +751,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     padding: 10vw;
-    gap: 5vw;
+    gap: 8vw;
     text-align: center;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;

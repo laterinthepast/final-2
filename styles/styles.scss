@@ -490,7 +490,7 @@ body {
       align-items: center;
       width: 100%;
       img {
-        width: 80%;
+        width: 80vw;
         height: auto;
       }
     }
@@ -510,7 +510,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 2vw;
+      gap: 6vw;
       position: absolute;
       width: 30vw;
       top: 35vw;
@@ -581,7 +581,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 10vw;
-    gap: 5vw;
+    gap: 8vw;
     text-align: center;
     transition: all 1s ease-in-out;
     img:hover {
