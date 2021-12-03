@@ -553,15 +553,15 @@ body {
       justify-content: center;
       align-items: center;
       p {
-        font-size: 1.1vw;
+        font-size: 1.5vw;
         font-weight: 200;
       }
     }
     .btn {
-      width: 20vw;
+      width: 10vw;
       text-decoration: none;
       color: #000;
-      font-size: 2vw;
+      font-size: 1.5vw;
       font-weight: 600;
       background-color: #fff;
       border: 1px solid #000;
@@ -643,20 +643,30 @@ body {
   /* NEWS PAGE */
   .akt-wrapper {
     padding: 2vw 10vw;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
-    gap: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
     background: rgb(238, 238, 238);
 
     .akt-container {
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       p {
+        flex-grow: 2;
         text-align: justify;
+        font-size: 1.3vw;
+      }
+      img {
+        width: 30vw;
+        flex: 1;
+        padding: 2vw;
       }
     }
     date {
       position: absolute;
-      color: rgb(235, 53, 53);
+      color: rgb(0, 0, 0);
       top: 0;
       left: 0;
       font-weight: 900;
@@ -706,12 +716,7 @@ body {
         align-items: center;
         font-size: 2.5vw;
         font-weight: 900;
-        background: rgb(231, 231, 231);
-        background: radial-gradient(
-          circle,
-          rgba(231, 231, 231, 1) 0%,
-          rgba(249, 223, 255, 1) 100%
-        );
+        background: rgb(247, 232, 232);
         border: 2px solid #000;
       }
     }
