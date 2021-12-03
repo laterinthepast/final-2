@@ -246,7 +246,20 @@ body {
       }
     }
   }
-  
+
+  /* FRONT PAGE GALLERY */
+
+  .gallery-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10vw;
+    padding: 10vw 5vw;
+    a {
+      cursor: pointer;
+    }
+  }
+
   #footer {
     background: #fff;
     padding: 5vw;
@@ -271,12 +284,18 @@ body {
       }
     }
   }
+
+  /* STOWARZYSZENIE PAGE */
   .sto-container {
     padding: 5vw 10vw;
+    text-align: justify;
     img {
       padding: 5vw;
     }
   }
+
+  /* AKTUALNOSCI PAGE */
+
   .akt-wrapper {
     display: flex;
     flex-direction: column;
@@ -289,7 +308,6 @@ body {
     p {
       text-align: justify;
     }
-
     date {
       position: absolute;
       color: #000;
@@ -303,16 +321,19 @@ body {
     }
   }
 }
-
+/* GALLERY PAGE */
 .gallery {
   padding: 10vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
   grid-template-rows: auto;
   gap: 3vw;
-  
+  h1 {
+    border: 1px solid #000;
+    
+    
+  }
 }
-
 .galleryBkg {
   display: none;
   height: 100vh;
@@ -335,7 +356,7 @@ body {
     top: 15vw;
     right: 4vw;
     height: 10vw;
-    width: 5vw;
+    width: 6vw;
     color: #fff;
   }
 }
@@ -349,9 +370,7 @@ body {
   object-fit: contain;
   z-index: 9999;
 }
-
 /* FESTIVALS  */
-
 .festival-label {
   display: flex;
   flex-direction: column;
@@ -369,7 +388,6 @@ body {
     color: #000;
   }
 }
-
 .festival-wrapper {
   display: flex;
   flex-direction: column;
@@ -386,7 +404,7 @@ body {
   padding: 5vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
-  
+
   gap: 3vw;
 }
 
