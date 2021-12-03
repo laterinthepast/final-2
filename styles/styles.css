@@ -893,11 +893,17 @@ body {
     -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
             box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   }
+  .gallery img:hover {
+    cursor: pointer;
+  }
   .toggle span {
     position: fixed;
     font-size: 3rem;
     top: 2vw;
     right: 1vw;
+  }
+  .toggle span:hover {
+    cursor: pointer;
   }
   /* FESTIVAL PAGE */
   .festival-label {
@@ -922,5 +928,20 @@ body {
     background: #e7e7e7;
     background: radial-gradient(circle, #e7e7e7 0%, #f9dfff 100%);
     border: 2px solid #000;
+  }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 5vw;
+    right: 5vw;
+    width: 10vw;
+    border: 1px solid #000;
+    border-radius: 20px;
+    z-index: 10;
+  }
+  #myBtn a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2vw;
   }
 }
