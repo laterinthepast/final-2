@@ -326,7 +326,7 @@ body {
   }
 }
 
-.gallery-wrapper {
+.gallery {
   padding: 10vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
@@ -368,4 +368,57 @@ body {
   transform: translate(-50%, -50%);
   object-fit: contain;
   z-index: 9999;
+}
+
+/* FESTIVALS  */
+
+.festival-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.festival-year {
+  display: flex;
+  gap: 1vw;
+  a {
+    margin: 0;
+    background: rgb(247, 232, 232);
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+.festival-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  h1 {
+    font-size: 10vw;
+    font-weight: 900;
+  }
+}
+
+.festival {
+  padding: 5vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+  gap: 3vw;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 5vw;
+  right: 5vw;
+  width: 15vw;
+  border: 1px solid #000;
+  border-radius: 20px;
+  a {
+    text-decoration: none;
+    color: #000;
+  }
 }
