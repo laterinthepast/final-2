@@ -246,29 +246,7 @@ body {
       }
     }
   }
-  .gallery-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 10vw;
-    padding: 20vw 10vw;
-    text-align: center;
-    .gallery-1,
-    .gallery-2 {
-      max-height: 80vh;
-      img {
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
-          rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        object-fit: contain;
-      }
-    }
-    h2 {
-      font-weight: 900;
-      padding: 1vw;
-      font-size: 8vw;
-    }
-  }
+  
   #footer {
     background: #fff;
     padding: 5vw;
@@ -330,7 +308,9 @@ body {
   padding: 10vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+  grid-template-rows: auto;
   gap: 3vw;
+  
 }
 
 .galleryBkg {
