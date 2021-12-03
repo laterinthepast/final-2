@@ -637,9 +637,9 @@ body {
   }
   .hero .hero-text {
     position: absolute;
-    top: 50%;
+    top: 20vw;
     background: rgba(255, 255, 255, 0.774);
-    width: 60%;
+    width: 70vw;
     padding: 2vw;
   }
   .hero .hero-text span {
@@ -659,8 +659,8 @@ body {
     gap: 2vw;
     position: absolute;
     width: 30vw;
-    top: 80%;
-    left: 20%;
+    top: 35vw;
+    left: 20vw;
   }
   .hero .hero-buttons a {
     text-decoration: none;

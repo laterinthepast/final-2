@@ -426,7 +426,16 @@ body {
   }
 }
 
+
+
+
+
 /* DESKTOP VERSION ================================================= */
+
+
+
+
+
 @media (min-width: 768px) {
   .hide-for-desktop {
     display: none;
@@ -488,9 +497,9 @@ body {
 
     .hero-text {
       position: absolute;
-      top: 50%;
+      top: 20vw;
       background: rgba(255, 255, 255, 0.774);
-      width: 60%;
+      width: 70vw;
       padding: 2vw;
       span {
         font-size: 3vw;
@@ -504,8 +513,8 @@ body {
       gap: 2vw;
       position: absolute;
       width: 30vw;
-      top: 80%;
-      left: 20%;
+      top: 35vw;
+      left: 20vw;
       a {
         text-decoration: none;
         color: #000;
