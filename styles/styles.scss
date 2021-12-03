@@ -137,12 +137,8 @@ body {
   /* HERO SECTION */
 
   .hero {
-    .main-carousel {
-      z-index: -1;
-      max-height: 85vh;
-      max-width: 100%;
-    }
-    position: relative;
+    background: url('/files/gallery/main-page/main21.jpeg') no-repeat center center;
+    background-size: cover;
     height: 85vh;
     width: 100%;
     display: flex;
@@ -334,7 +330,6 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
   gap: 5vw;
-  
 }
 
 .galleryBkg {
@@ -346,7 +341,6 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  
 }
 .toggle {
   position: fixed;

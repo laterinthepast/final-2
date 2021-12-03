@@ -169,7 +169,8 @@ body {
   }
   /* HERO SECTION */
   .hero {
-    position: relative;
+    background: url("/files/gallery/main-page/main21.jpeg") no-repeat center center;
+    background-size: cover;
     height: 85vh;
     width: 100%;
     display: -webkit-box;
@@ -186,11 +187,6 @@ body {
         -ms-flex-align: center;
             align-items: center;
     gap: 5vw;
-  }
-  .hero .main-carousel {
-    z-index: -1;
-    max-height: 85vh;
-    max-width: 100%;
   }
   .hero p {
     position: absolute;
