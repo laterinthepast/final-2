@@ -705,6 +705,7 @@ body {
   .hero .hero-text {
     position: absolute;
     top: 20vw;
+    left: 12vw;
     background: rgba(255, 255, 255, 0.774);
     width: 70vw;
     padding: 2vw;
@@ -868,6 +869,9 @@ body {
   }
   #footer .footer-logo img {
     width: 10vw;
+  }
+  #footer .footer-logo img:first-child {
+    width: 25vw;
   }
   #footer .footer-info {
     display: -webkit-box;
