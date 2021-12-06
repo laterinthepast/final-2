@@ -1,12 +1,7 @@
-
-
-
 let mobileToggle = document.querySelector('.mobile-nav');
 let mobileLinks = document.querySelector('.navbar-links');
 let modal = document.querySelector('.modal');
 let navbar = document.querySelector('.navbar');
-
-
 
 mobileToggle.addEventListener('click', function () {
     if (mobileToggle.classList.contains('active-mob')) {
@@ -18,17 +13,12 @@ mobileToggle.addEventListener('click', function () {
         mobileToggle.classList.add('active-mob');
         mobileLinks.classList.add('mobile-links');
         modal.style.display = 'block';
-
     }
-
 });
-
 /* MODAL IMAGE GALLERY */
-
 let modalk = document.querySelector('.galleryBkg');
 let closeModal = document.querySelector('.toggle');
 let gallery = document.querySelector('.gallery');
-
 
 gallery.addEventListener('click', function (e) {
     if (e.target.classList.contains('myImg')) {
@@ -40,10 +30,7 @@ gallery.addEventListener('click', function (e) {
             e.target.classList.remove('active');
         });
     }
-
 })
-
-
 //Get the button:
 mybutton = document.getElementById("myBtn");
 // When the user scrolls down 20px from the top of the document, show the button
