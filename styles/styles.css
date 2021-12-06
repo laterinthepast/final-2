@@ -50,7 +50,7 @@ body {
     height: 100vh;
     display: none;
     z-index: 1;
-    background-color: #ffc02ce7;
+    background-color: #ffc02cf8;
     -webkit-animation: opacity-reverse 0.2s ease-in-out;
             animation: opacity-reverse 0.2s ease-in-out;
   }
