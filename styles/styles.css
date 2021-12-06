@@ -891,8 +891,7 @@ body {
     font-weight: 900;
   }
   /* STOWARZYSZENIE PAGE */
-  .sto-container,
-  .inf-container {
+  .sto-container {
     padding: 2vw 10vw;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -903,15 +902,14 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    gap: 5vw;
     background: #eeeeee;
   }
-  .sto-container p,
-  .inf-container p {
+  .sto-container p {
     font-size: 1.1vw;
     font-weight: 200;
   }
-  .sto-container img,
-  .inf-container img {
+  .sto-container img {
     width: 25vw;
     height: auto;
     -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -919,6 +917,19 @@ body {
   }
   /* INFO PAGE */
   .inf-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 2vw 10vw;
   }
   .inf-container img {
@@ -954,6 +965,15 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
+  .akt-wrapper .akt-container table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #000;
+  }
+  .akt-wrapper .akt-container table tr th {
+    background: #ffbe2c;
+  }
   .akt-wrapper .akt-container p {
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
@@ -981,8 +1001,8 @@ body {
   }
   .gallery {
     padding: 2vw 10vw;
-    -ms-grid-columns: (minmax(20vw, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    -ms-grid-columns: (minmax(10vw, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
     gap: 2vw;
     background: #eeeeee;
     position: relative;

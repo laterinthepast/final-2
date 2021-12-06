@@ -666,12 +666,12 @@ body {
     }
   }
   /* STOWARZYSZENIE PAGE */
-  .sto-container,
-  .inf-container {
+  .sto-container {
     padding: 2vw 10vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5vw;
     background: rgb(238, 238, 238);
     p {
       font-size: 1.1vw;
@@ -686,6 +686,10 @@ body {
   }
   /* INFO PAGE */
   .inf-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 2vw 10vw;
     img {
       width: 40vw;
@@ -709,6 +713,15 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      table {
+        tr {
+          display: flex;
+          border-bottom: 1px solid #000;
+          th {
+            background: #ffbe2c;
+          }
+        }
+      }
       p {
         flex-grow: 2;
         text-align: justify;
@@ -734,7 +747,7 @@ body {
   }
   .gallery {
     padding: 2vw 10vw;
-    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
     gap: 2vw;
     background: rgb(238, 238, 238);
 
