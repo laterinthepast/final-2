@@ -9,7 +9,7 @@
 }
 body {
   /* font-family: "Montserrat", sans-serif; */
-  font-family: "Playfair Display", serif;
+  font-family: "Lobster", serif;
   color: rgb(14, 14, 14);
 }
 
@@ -95,15 +95,15 @@ body {
         align-items: center;
         padding: 2vw;
       }
-      /* .navbar-img {
+      .nav-img {
         position: absolute;
         top: 0;
         left: 2vw;
         width: 20vw;
         img {
-          width: 20vw;
+          width: 18vw;
         }
-      } */
+      }
       .navbar-header {
         display: flex;
         justify-content: center;
@@ -143,8 +143,8 @@ body {
   /* HERO SECTION */
 
   .hero {
-    background: url("/files/gallery/main-page/main21.jpeg") no-repeat center
-      center;
+    background: url("/files/gallery/compressed/hor/1\ \(14\).jpeg") no-repeat
+      center center;
     background-size: cover;
     height: 85vh;
     width: 100%;
@@ -185,16 +185,16 @@ body {
     padding: 0 15vw;
 
     .btn:first-child {
-      background: #000;
-      border-color: #fff;
+      background: #cfb14b;
+      border-color: #000;
       font-weight: 900;
       font-size: 4vw;
-      color: #fff;
+      color: #000;
       border-radius: 15px;
     }
 
     .btn:nth-last-child(1) {
-      background: #dadada;
+      background: #ffcd27;
       border: 2px solid rgb(34, 27, 27);
       font-size: 4vw;
       font-weight: 900;
@@ -205,44 +205,43 @@ body {
 
   /* NEWS  */
   .news {
-    &-img {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      a {
-        width: 30vw;
-        padding: 10vw 0;
-      }
-    }
+    padding: 2vw 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
     h1 {
+      padding: 20vw 0 10vw;
       text-align: center;
-
       font-size: 13vw;
       font-weight: 900;
-      font-family: "Lobster", sans-serif;
     }
     .news-section {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
+      gap: 10vw;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      padding: 5vw;
+      border-radius: 10px;
       &-img {
         img {
-          transform: scale(0.8);
+          transform: scale(0.95);
           box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
             rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
         }
       }
       &-text {
-        padding: 0 5vw 2vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: justify;
         .btn {
           width: 50%;
-          background: #dadada;
+          background: #ffcd27;
           border: 2px solid rgb(34, 27, 27);
           font-size: 4vw;
           font-weight: 900;
@@ -261,6 +260,11 @@ body {
     text-align: center;
     gap: 10vw;
     padding: 10vw 5vw;
+    .gallery-1 {
+      img {
+        width: 50vw;
+      }
+    }
     a {
       cursor: pointer;
     }
@@ -276,6 +280,9 @@ body {
       img {
         width: 30vw;
         height: auto;
+      }
+      .tom {
+        width: 50vw;
       }
     }
     .footer-info {
@@ -299,7 +306,14 @@ body {
       padding: 5vw;
     }
   }
-
+  /* INFO PAGE */
+  .inf-container {
+    padding: 5vw 10vw;
+    text-align: justify;
+    img {
+      padding: 5vw;
+    }
+  }
   /* AKTUALNOSCI PAGE */
 
   .akt-wrapper {
@@ -311,6 +325,16 @@ body {
   }
   .akt-container {
     position: relative;
+    table {
+      display: flex;
+      flex-direction: column;
+      tr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+      }
+    }
     p {
       text-align: justify;
     }
@@ -426,15 +450,7 @@ body {
   }
 }
 
-
-
-
-
 /* DESKTOP VERSION ================================================= */
-
-
-
-
 
 @media (min-width: 768px) {
   .hide-for-desktop {
@@ -452,12 +468,22 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      .nav-img {
+        position: absolute;
+        width: 7vw;
+        left: 15vw;
+        top: 2vw;
+      }
       .navbar-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         .navbar-header {
+          padding-bottom: 1vw;
           display: flex;
           justify-content: center;
           align-items: center;
-          padding-bottom: 1vw;
           img {
             width: 20vw;
             height: auto;
@@ -472,13 +498,20 @@ body {
         width: 50%;
         a {
           color: #000;
-          font-size: 1.3vw;
+          font-size: 1.5vw;
           text-decoration: none;
+          transition: 0.2s ease-in-out;
+          &:hover {
+            color: #ffbe2c;
+          }
         }
       }
     }
     .navbar-image {
       display: none;
+    }
+    .desktop-haft {
+      width: 80vw;
     }
   }
   .hero {
@@ -528,6 +561,7 @@ body {
   }
   .news {
     padding: 2vw 10vw;
+
     &-img {
       padding: 2vw;
       a {
@@ -545,14 +579,17 @@ body {
     font-weight: 900;
   }
   .news-section {
-    padding: 2vw 2vw 2vw 10vw;
+    padding: 2vw;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    gap: 5vw;
+    gap: 2vw;
+
     &-img {
+      display: flex;
+      justify-content: flex-end;
       img {
-        max-width: 30vw;
+        max-width: 20vw;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
           rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
       }
@@ -565,6 +602,7 @@ body {
       p {
         font-size: 1.5vw;
         font-weight: 200;
+        text-align: left;
       }
     }
     .btn {
@@ -575,19 +613,28 @@ body {
       font-weight: 600;
       background-color: #fff;
       border: 1px solid #000;
+      &:hover {
+        background-color: #ffbe2c;
+        color: rgb(253, 83, 83);
+      }
     }
   }
   .gallery-section {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 10vw;
-    gap: 8vw;
+    gap: 5vw;
     text-align: center;
     transition: all 1s ease-in-out;
     img:hover {
       box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
         rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+    .gallery-1 {
+      img {
+        width: 22vw;
+      }
     }
   }
   #footer {
@@ -626,7 +673,6 @@ body {
     justify-content: center;
     align-items: center;
     background: rgb(238, 238, 238);
-
     p {
       font-size: 1.1vw;
       font-weight: 200;
@@ -640,7 +686,7 @@ body {
   }
   /* INFO PAGE */
   .inf-container {
-    flex-direction: column;
+    padding: 2vw 10vw;
     img {
       width: 40vw;
       margin: 2vw 5vw;
