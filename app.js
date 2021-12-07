@@ -1,3 +1,5 @@
+
+
 let mobileToggle = document.querySelector('.mobile-nav');
 let mobileLinks = document.querySelector('.navbar-links');
 let modal = document.querySelector('.modal');
@@ -16,6 +18,7 @@ mobileToggle.addEventListener('click', function () {
     }
 });
 /* MODAL IMAGE GALLERY */
+
 let modalk = document.querySelector('.galleryBkg');
 let closeModal = document.querySelector('.toggle');
 let gallery = document.querySelector('.gallery');
@@ -30,7 +33,8 @@ gallery.addEventListener('click', function (e) {
             e.target.classList.remove('active');
         });
     }
-})
+})  
+
 //Get the button:
 mybutton = document.getElementById("myBtn");
 // When the user scrolls down 20px from the top of the document, show the button
@@ -49,6 +53,24 @@ function topFunction() {
 }
 
 
+const modalG = document.querySelector('.modalG');
+const previews = document.querySelectorAll('.gallery img');
+const original = document.querySelector('.full-img');
 
+previews.forEach((preview) => {
+    preview.addEventListener('click', () => {
+        modalG.classList.add('open');
+        original.classList.add('open');
+        const originalSrc = preview.getAttribute('data-original');
+        original.src = originalSrc;
+    });
+});
 
+modalG.addEventListener('click', (event) => {
+    if (event.target === modalG) {
+        modalG.classList.remove('open');
+        original.classList.remove('open');
+        original.src = '';
 
+    }
+})
