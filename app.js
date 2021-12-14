@@ -19,7 +19,7 @@ mobileToggle.addEventListener('click', function () {
 });
 /* MODAL IMAGE GALLERY */
 
-let modalk = document.querySelector('.galleryBkg');
+/* let modalk = document.querySelector('.galleryBkg');
 let closeModal = document.querySelector('.toggle');
 let gallery = document.querySelector('.gallery');
 
@@ -33,7 +33,7 @@ gallery.addEventListener('click', function (e) {
             e.target.classList.remove('active');
         });
     }
-})  
+})   */
 
 //Get the button:
 mybutton = document.getElementById("myBtn");
