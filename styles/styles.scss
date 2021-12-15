@@ -28,6 +28,9 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .link-icon {
+    width: 10vw;
+  }
   .full-img {
     position: absolute;
     width: 80%;
@@ -460,6 +463,14 @@ body {
 /* DESKTOP VERSION ================================================= */
 
 @media (min-width: 768px) {
+
+  .link-icon {
+    width: 13vw;
+    padding: 1vw;
+    &:hover {
+      color: #ffbe2c;
+    }
+  }
   .hide-for-desktop {
     display: none;
   }
