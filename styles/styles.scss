@@ -311,6 +311,10 @@ body {
   .sto-container {
     padding: 5vw 10vw;
     text-align: justify;
+    p:first-child {
+      background-color: rgb(250, 255, 208);
+      padding: 1vw;
+    }
     img {
       padding: 5vw;
     }

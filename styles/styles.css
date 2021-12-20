@@ -387,6 +387,10 @@ body {
     padding: 5vw 10vw;
     text-align: justify;
   }
+  .sto-container p:first-child {
+    background-color: #faffd0;
+    padding: 1vw;
+  }
   .sto-container img {
     padding: 5vw;
   }
