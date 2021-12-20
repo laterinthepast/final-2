@@ -34,13 +34,13 @@ body {
   .full-img {
     position: absolute;
     width: 80%;
-    
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.8);
     transition: all 0.2s ease-out;
   }
-  
+
   .full-img.open {
     transform: translate(-50%, -50%) scale(1.2);
   }
@@ -171,7 +171,7 @@ body {
     gap: 5vw;
     p {
       position: absolute;
-      top: 50%;
+      top: 60%;
       width: 85%;
       color: rgb(20, 20, 20);
       text-align: center;
@@ -276,7 +276,7 @@ body {
     text-align: center;
     gap: 10vw;
     padding: 10vw 5vw;
-    
+
     a {
       cursor: pointer;
     }
@@ -293,7 +293,6 @@ body {
         width: 30vw;
         height: auto;
       }
-      
     }
     .footer-info {
       text-align: center;
@@ -362,7 +361,7 @@ body {
   }
 }
 /* GALLERY PAGE */
- .gallery {
+.gallery {
   padding: 10vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
@@ -370,8 +369,8 @@ body {
   gap: 3vw;
   h1 {
     border: 1px solid #000;
-  } 
-} 
+  }
+}
 .galleryBkg {
   display: none;
   height: 100vh;
@@ -463,13 +462,9 @@ body {
 /* DESKTOP VERSION ================================================= */
 
 @media (min-width: 768px) {
-
   .link-icon {
     width: 13vw;
     padding: 1vw;
-    &:hover {
-      color: #ffbe2c;
-    }
   }
   .hide-for-desktop {
     display: none;
@@ -650,7 +645,6 @@ body {
       box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
         rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     }
-    
   }
   #footer {
     display: flex;
@@ -690,7 +684,10 @@ body {
     justify-content: center;
     align-items: center;
     gap: 5vw;
-    background: rgb(238, 238, 238);
+    p:first-child {
+      background-color: rgb(250, 255, 208);
+      padding: 1vw;
+    }
     p {
       font-size: 1.1vw;
       font-weight: 200;
@@ -828,7 +825,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
     gap: 2vw;
     padding: 2vw 10vw;
-    
   }
   .full-img {
     position: absolute;
@@ -839,15 +835,13 @@ body {
     transform: translate(-50%, -50%) scale(0.8);
     transition: all 0.2s ease-out;
   }
-  
+
   .full-img.open {
     transform: translate(-50%, -50%) scale(1);
   }
 }
 
 /* GALLERY NEW */
-
-
 
 .img-container {
   overflow: hidden;
@@ -878,5 +872,3 @@ body {
   opacity: 1;
   pointer-events: all;
 }
-
-

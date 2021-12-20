@@ -211,7 +211,7 @@ body {
   }
   .hero p {
     position: absolute;
-    top: 50%;
+    top: 60%;
     width: 85%;
     color: #141414;
     text-align: center;
@@ -606,9 +606,6 @@ body {
     width: 13vw;
     padding: 1vw;
   }
-  .link-icon:hover {
-    color: #ffbe2c;
-  }
   .hide-for-desktop {
     display: none;
   }
@@ -922,7 +919,10 @@ body {
         -ms-flex-align: center;
             align-items: center;
     gap: 5vw;
-    background: #eeeeee;
+  }
+  .sto-container p:first-child {
+    background-color: #faffd0;
+    padding: 1vw;
   }
   .sto-container p {
     font-size: 1.1vw;

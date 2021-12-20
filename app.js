@@ -53,6 +53,9 @@ function topFunction() {
 }
 
 
+
+
+
 const modalG = document.querySelector('.modalG');
 const previews = document.querySelectorAll('.gallery img');
 const original = document.querySelector('.full-img');
@@ -74,3 +77,4 @@ modalG.addEventListener('click', (event) => {
 
     }
 })
+
