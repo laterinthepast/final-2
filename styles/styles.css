@@ -38,6 +38,9 @@ body {
   .link-icon {
     width: 10vw;
   }
+  .link-icon-sp {
+    width: 10vw;
+  }
   .full-img {
     position: absolute;
     width: 80%;
@@ -607,7 +610,9 @@ body {
 /* DESKTOP VERSION ================================================= */
 @media (min-width: 768px) {
   .link-icon {
-    width: 13vw;
+    padding: 0vw;
+  }
+  .link-icon-sp {
     padding: 1vw;
   }
   .hide-for-desktop {
@@ -684,6 +689,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    gap: 1vw;
     width: 50%;
   }
   .navbar .navigation .navbar-links a {
