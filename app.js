@@ -1,4 +1,14 @@
+/* document.onreadystatechange = function() {
+    if (document.readyState !== "complete") {
+        document.querySelector("#loader").style.visibility = "visible";
+       
+    } else {
+        document.querySelector("#loader").style.display = "none";
+    }
+}; */
 
+
+/*
 
 let mobileToggle = document.querySelector('.mobile-nav');
 let mobileLinks = document.querySelector('.navbar-links');
@@ -16,7 +26,7 @@ mobileToggle.addEventListener('click', function () {
         mobileLinks.classList.add('mobile-links');
         modal.style.display = 'block';
     }
-});
+}); */
 /* MODAL IMAGE GALLERY */
 
 /* let modalk = document.querySelector('.galleryBkg');
@@ -36,7 +46,7 @@ gallery.addEventListener('click', function (e) {
 })   */
 
 //Get the button:
-mybutton = document.getElementById("myBtn");
+/* mybutton = document.getElementById("myBtn");
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
@@ -50,13 +60,13 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+} */
 
 
 
 
 
-const modalG = document.querySelector('.modalG');
+/* const modalG = document.querySelector('.modalG');
 const previews = document.querySelectorAll('.gallery img');
 const original = document.querySelector('.full-img');
 
@@ -78,3 +88,4 @@ modalG.addEventListener('click', (event) => {
     }
 })
 
+ */
