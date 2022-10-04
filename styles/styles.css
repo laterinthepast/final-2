@@ -42,14 +42,6 @@
   .footer img {
     width: 100px !important;
   }
-  .background {
-    background-image: url("/files/gallery/compressed/hor/Compressed/1 (14).jpeg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 90vh;
-  }
 }
 .zoomed {
   transform: scale(150%);
