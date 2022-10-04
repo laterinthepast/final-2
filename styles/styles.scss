@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100;200;300;400;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Inter Tight', sans-serif;
+}
+
 .text-on-top {
   position: absolute;
   top: 50%;
@@ -19,45 +25,23 @@
   position: relative;
 }
 
-.spinner{
-  display: none !important;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 99;
-  transform: translate(-50%, -50%);
-}
-.white-bg{
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  background-color: rgb(255, 255, 255); /* Fallback color */
-}
-
-#loader {
-  border: 12px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 12px solid #444444;
-  width: 70px;
-  height: 70px;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  100% {
-      transform: rotate(360deg);
+@media (max-width: 768px){
+  .logo {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 200px !important;
   }
-}
-
-.center {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  .text-on-top {
+    width: 80%;
+    padding: 10px !important;
+  }
+  .container {
+    padding: 0 20px !important;
+  }
+  .footer {
+    img {
+      width: 100px !important;
+    }
+  }
 }
