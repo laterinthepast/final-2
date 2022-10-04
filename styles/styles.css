@@ -42,6 +42,9 @@
   .footer img {
     width: 100px !important;
   }
+  .background {
+    background-image: url("/files/gallery/compressed/hor/Compressed/1 (19).jpg");
+  }
 }
 .zoomed {
   transform: scale(150%);
