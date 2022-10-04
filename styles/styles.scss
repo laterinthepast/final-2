@@ -47,7 +47,6 @@
   .background {
     background-image: url("/files/gallery/compressed/hor/Compressed/1\ \(19\).jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     height: 90vh;
@@ -62,6 +61,13 @@
   transform: translate(-50%, -50%);
   width: 50%;
   z-index: 1050;
+  @media (max-width: 768px) {
+    transform: none;
+    
+    transform: translate(-50%, -50%);
+    width: 100%;
+    
+  }
 }
 .modal {
   position: fixed;
