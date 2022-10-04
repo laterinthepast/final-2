@@ -44,6 +44,11 @@
   }
   .background {
     background-image: url("/files/gallery/compressed/hor/Compressed/1 (19).jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
   }
 }
 .zoomed {
