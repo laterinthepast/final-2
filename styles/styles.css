@@ -13,11 +13,11 @@
 }
 
 .background {
-  background-image: url("/files/gallery/main-page/Compressed/inf.jpeg");
+  background-image: url("/files/gallery/main-page/Compressed/main.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
-  background-size: cover;
+  background-size: contain;
   height: 100vh;
 }
 
@@ -46,6 +46,7 @@
     background-color: rgb(255, 255, 255) !important;
     background-image: url("/files/gallery/compressed/hor/Compressed/1 (16).jpg");
     background-size: contain;
+    height: 80vh;
   }
 }
 .zoomed {
