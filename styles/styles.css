@@ -48,6 +48,9 @@
     background-size: contain;
     height: 80vh;
   }
+  .front-text {
+    font-size: 16px !important;
+  }
 }
 .zoomed {
   transform: scale(150%);
